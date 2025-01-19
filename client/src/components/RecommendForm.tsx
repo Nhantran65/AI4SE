@@ -31,10 +31,38 @@ const RecommendForm: React.FC = () => {
         <div style={containerStyle}>
             <h2 style={headerStyle}>Recommend Cars</h2>
             <form onSubmit={handleSubmit} style={formStyle}>
-                <input type="number" name="desired_engine_size" placeholder="Engine Size" onChange={handleChange} step="any" style={inputStyle} />
-                <input type="number" name="desired_cylinders" placeholder="Cylinders" onChange={handleChange} step="any" style={inputStyle} />
-                <input type="number" name="desired_fuel_consumption" placeholder="Fuel Consumption" onChange={handleChange} step="any" style={inputStyle} />
-                <input type="number" name="desired_co2" placeholder="CO2 Emission" onChange={handleChange} step="any" style={inputStyle} />
+                <input
+                    type="number"
+                    name="desired_engine_size"
+                    placeholder="Engine Size (L)"
+                    onChange={handleChange}
+                    step="any"
+                    style={inputStyle}
+                />
+                <input
+                    type="number"
+                    name="desired_cylinders"
+                    placeholder="Number of Cylinders"
+                    onChange={handleChange}
+                    step="any"
+                    style={inputStyle}
+                />
+                <input
+                    type="number"
+                    name="desired_fuel_consumption"
+                    placeholder="Combined Fuel Consumption (L/100 km)"
+                    onChange={handleChange}
+                    step="any"
+                    style={inputStyle}
+                />
+                <input
+                    type="number"
+                    name="desired_co2"
+                    placeholder="CO2 Emission (g/km)"
+                    onChange={handleChange}
+                    step="any"
+                    style={inputStyle}
+                />
                 <button type="submit" style={buttonStyle}>Recommend</button>
             </form>
             {recommendations.length > 0 && (
@@ -98,8 +126,8 @@ const buttonStyle: React.CSSProperties = {
 const listStyle: React.CSSProperties = {
     marginTop: "20px",
     textAlign: "left",
-    listStyleType: "none", // Loại bỏ dấu bullet point
-    padding: 0, // Loại bỏ padding mặc định
+    listStyleType: "none", // Loại bỏ bullet point
+    padding: 0,
 };
 
 const listItemStyle: React.CSSProperties = {
