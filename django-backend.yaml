@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: django-backend
+  template:
+    metadata:
+      labels:
+        app: django-backend
+    spec:
+      containers:
+        - name: django-backend
+          image: image-registry.apps.2.rahti.csc.fi/sdx-assignment-nhantran/django-backend:latest
+          ports:
+            - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: django-backend-service
+spec:
+  ports:
+    - port: 8000
+      targetPort: 8000
+  selector:
+    app: django-backend
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: django-backend-route
+spec:
+  to:
+    kind: Service
+    name: django-backend-service
+  port:
+    targetPort: 8000
+  tls:
+    termination: edge
