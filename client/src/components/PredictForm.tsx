@@ -100,7 +100,7 @@ const PredictForm: React.FC = () => {
                 </select>
                 <button type="submit" style={buttonStyle}>Predict</button>
             </form>
-            {result !== null && <p style={resultStyle}>Predicted CO2 Emission: {result}</p>}
+            {result !== null && <p style={resultStyle}>Predicted CO2 Emission: {result}  g/km</p>}
         </div>
     );
 };

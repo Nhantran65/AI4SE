@@ -74,10 +74,10 @@ const RecommendForm: React.FC = () => {
                             </div>
                             {expandedIndex === index && (
                                 <div style={detailsStyle}>
-                                    <p>Make: {car.make}</p>
+                                    <p>Company : {car.make}</p>
                                     <p>Model: {car.model}</p>
                                     <p>Vehicle Class: {car.vehicle_class}</p>
-                                    <p>Transmission: {car.transmission}</p>
+                                    <p>Transmission Type: {car.transmission}</p>
                                     <p>Fuel Type: {car.fuel_type}</p>
                                 </div>
                             )}
