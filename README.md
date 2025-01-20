@@ -4,6 +4,10 @@
 
 In the project directory, you can run:
 
+### `yarn install`
+
+To install all libraries in Package.json 
+
 ### `yarn start`
 
 Runs the app in the development mode.\
