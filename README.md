@@ -1,5 +1,7 @@
 
 # AI4SE_Project
+Link to demo: [https://react-frontend-route-sdx-assignment-nhantran.2.rahtiapp.fi/predict](https://react-frontend-route-sdx-assignment-nhantran.2.rahtiapp.fi/predict)
+
 ## Run Frontend
 
 In the project directory, you can run:
