@@ -2,7 +2,7 @@
 # AI4SE_Project
 Link to demo: [https://react-frontend-route-sdx-assignment-nhantran.2.rahtiapp.fi/predict](https://react-frontend-route-sdx-assignment-nhantran.2.rahtiapp.fi/predict)
 
-Nowadays, car buyers have a good awareness regarding environmental sustainability. Thus, they are increasingly concerned about environmental impact, CO2 emissions and fuel efficiency. However, with thousands of car models and brands out there, it is challenging for the consumers to quickly find suitable cars tailored to their needs and expectations on CO2 emissions. They need a smart tool to help them make informed, eco-friendly, and data-driven decisions when selecting a vehicle. With those requirements, an AI-based software would be a great choice as it can employ Machine Learning (ML) models to: 
+Nowadays, car buyers have a good awareness regarding environmental sustainability. Thus, they are increasingly concerned about environmental impact, CO2 emissions and fuel efficiency. However, with thousands of car models and brands out there, it is challenging for the consumers to quickly find suitable cars tailored to their needs and expectations on CO2 emissions. They need a smart tool to help them make informed, eco-friendly, and data-driven decisions when selecting a vehicle. With those requirements, we employ Machine Learning (ML) models to create an AI-based software that can: 
 
 - Predict CO2 emissions based on several different vehicle features such as vehicle company, car model, vehicle class, engine size, number of cylinders, etc. Instead of having to scan through car brand’s website manually, the users can easily enter information about the vehicle’s features and get the results just in seconds. 
 
